@@ -44,7 +44,7 @@ public class TestDataFactory {
         return leads;
     }
 
-    public static List<Lead> createCases(){
+    public static List<Case> createCases(){
         List<Case> caseList = new List<Case>();
         for(Integer i=1; i<=200; i++){
             Case c = new Case();
