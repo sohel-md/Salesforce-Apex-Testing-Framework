@@ -22,4 +22,15 @@ public class TestDataFactory {
         insert cons;
         return cons;
     }
+
+    public static List<Opportunity> createOpportunities(){
+        List<Opportunity> opps = new List<Opportunity>();
+        for(Integer i=1; i<=200; i++){
+            Opportunity opp = new Opportunity();
+            opp.Name = 'Test Opportunity';
+            opps.add(opp);
+        }
+        insert opps;
+        return opps;
+    }
 }
