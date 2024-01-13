@@ -28,9 +28,23 @@ public class TestDataFactory {
         for(Integer i=1; i<=200; i++){
             Opportunity opp = new Opportunity();
             opp.Name = 'Test Opportunity';
+            opp.CloseDate = System.Today();
+            opp.StageName = 'Prospecting';
             opps.add(opp);
         }
         insert opps;
         return opps;
+    }
+
+    public static List<Lead> createLeads(){
+        List<Lead> leads = new List<Lead>();
+        for(Integer i=1; i<=200; i++){
+            Lead l = new Lead();
+            l.LastName = 'Test Lead';
+            l.Company = 'ABC';
+            leads.add(l);
+        }
+        insert leads;
+        return leads;
     }
 }
