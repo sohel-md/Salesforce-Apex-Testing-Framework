@@ -8,7 +8,6 @@ public class TestDataFactory {
             acc.Industry = 'Agriculture';
             accts.add(acc);
         }
-        insert accts;
         return accts;
     }
 
@@ -19,7 +18,6 @@ public class TestDataFactory {
             con.LastName = 'Test Contact';
             cons.add(con);
         }
-        insert cons;
         return cons;
     }
 
@@ -32,7 +30,6 @@ public class TestDataFactory {
             opp.StageName = 'Prospecting';
             opps.add(opp);
         }
-        insert opps;
         return opps;
     }
 
@@ -44,7 +41,6 @@ public class TestDataFactory {
             l.Company = 'ABC';
             leads.add(l);
         }
-        insert leads;
         return leads;
     }
 }
